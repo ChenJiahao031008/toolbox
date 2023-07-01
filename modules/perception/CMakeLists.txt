@@ -9,3 +9,4 @@ endif (OpenCV_FOUND)
 
 add_subdirectory(yolop-v2)
 add_subdirectory(yolox-v3)
+add_subdirectory(bytetrack)

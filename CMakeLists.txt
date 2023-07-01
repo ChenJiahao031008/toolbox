@@ -14,9 +14,13 @@ option(BUILD_TEST "Build all tests." ON)
 option(BUILD_EXAMPLE "Build examples." ON)
 
 find_package(Boost REQUIRED COMPONENTS thread filesystem program_options system)
-
-link_directories(
+include_directories(
     ${Boost_INCLUDE_DIRS}
+)
+
+find_package(Eigen3 3.2.1 REQUIRED)
+include_directories(
+    ${EIGEN3_INCLUDE_DIR}
 )
 
 find_package(OpenMP REQUIRED)
@@ -52,6 +56,7 @@ target_link_libraries(main PRIVATE
     common
     yolopv2
     yoloxv3
+    bytetrack
     ezcfg::ezcfg
 )
 add_backward(${PROJECT_NAME})
