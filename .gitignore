@@ -1,0 +1,9 @@
+build/*
+bin/*
+log/*
+modules/perception/yolox-v3/models/*
+.vscode/
+*.so
+*.a
+*.engine
+
