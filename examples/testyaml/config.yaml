@@ -1,0 +1,21 @@
+%YAML:1.0
+
+num_iter: 3
+num_zones: 4
+num_min_pts: 10
+num_lpr: 20
+num_sectors_for_ATAT: 20
+
+max_r_for_ATAT: 5.0
+redundance_seeds: 0.5
+uprightness_thr: 0.707
+global_elevation_thr: -0.5
+adaptive_seed_selection_margin: -1.1
+thr_distance: 0.125
+noise_bound: 0.2
+
+num_sectors_each_zone: [16, 32, 54, 32]
+num_rings_each_zone: [2, 4, 4, 4]
+range_divide_level: [2.7, 12.3625, 22.025, 41.35, 80.0]
+elevation_thresholds: [0.5, 0.8, 1.0, 1.1]
+flatness_thr: [0.0, 0.000125, 0.000185, 0.000185]
